@@ -497,7 +497,7 @@ body{
 
 .section-header{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:30px;
 }
 
 .section-tag{
@@ -731,7 +731,7 @@ body{
 ===================================================== */
 
 .certifications-section{
-    padding:0px 0;
+    padding:px 0;
 }
 
 .cert-grid{
@@ -739,6 +739,7 @@ body{
     grid-template-columns:
     repeat(auto-fit,minmax(320px,1fr));
     gap:25px;
+    padding: 10px;
 }
 
 .cert-card{
@@ -1428,4 +1429,450 @@ img{
         width:100%;
     }
 
+}
+
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* Sections */
+
+section{
+    width:100%;
+    overflow:hidden;
+}
+
+/* Container */
+
+.main-container{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    padding-left:clamp(15px,4vw,40px);
+    padding-right:clamp(15px,4vw,40px);
+}
+
+
+/* Buttons */
+
+.hero-buttons,
+.cta-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+/* Skills */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    width:100%;
+}
+
+/* Projects */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+.project-card{
+    width:100%;
+}
+
+/* Education */
+
+.education-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+
+/* Contact */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.contact-form,
+.contact-info-column{
+    width:100%;
+}
+
+/* Footer */
+
+.footer-container{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* Resume Modal */
+
+.resume-modal-content{
+    width:min(95%,1100px);
+    height:min(90vh,850px);
+}
+
+/* Chat */
+
+.chat-window-bubble{
+    width:min(92vw,350px);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1024px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-image-wrapper{
+        order:-1;
+    }
+
+    .cta-group{
+        justify-content:center;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .hero-section{
+        padding-top:100px;
+    }
+
+    .hero-title{
+        font-size:2.5rem;
+    }
+
+    .cta-group{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        justify-content:center;
+    }
+
+    .stats-container{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .education-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-card,
+    .skill-card{
+        width:100%;
+    }
+
+    .chat-widget-container{
+        right:12px;
+        bottom:12px;
+    }
+
+}
+
+/* ====================================
+   GLOBAL RESPONSIVE FIX
+==================================== */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ====================================
+   HERO SECTION
+==================================== */
+
+.hero-section{
+    width:100%;
+    padding:100px 0 80px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 450px;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero-description{
+    max-width:700px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.hero-socials{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.hero-stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:30px;
+}
+
+.stat-card{
+    min-width:120px;
+    flex:1;
+}
+
+.hero-image-wrapper{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image-card{
+    width:100%;
+    max-width:420px;
+    aspect-ratio:4/5;
+}
+
+.hero-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:24px;
+}
+
+/* ====================================
+   EDUCATION
+==================================== */
+
+.timeline{
+    width:100%;
+}
+
+.timeline-card h3{
+    word-break:break-word;
+}
+
+/* ====================================
+   CONTACT
+==================================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card,
+.contact-form{
+    width:100%;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.contact-item span{
+    word-break:break-word;
+}
+
+/* ====================================
+   TABLET
+==================================== */
+
+@media(max-width:992px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-image-wrapper{
+        order:-1;
+    }
+
+    .hero-buttons,
+    .hero-socials,
+    .hero-stats{
+        justify-content:center;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media(max-width:768px){
+
+    .hero-section{
+        padding-top:120px;
+    }
+
+    .hero-title{
+        font-size:2.4rem;
+        line-height:1.2;
+    }
+
+    .hero-role{
+        font-size:1.2rem;
+    }
+
+    .hero-description{
+        font-size:.95rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button{
+        width:100%;
+        justify-content:center;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+    }
+
+    .stat-card{
+        width:100%;
+    }
+
+    .timeline{
+        padding:0;
+    }
+
+    .timeline-dot{
+        display:none;
+    }
+
+    .timeline-card{
+        margin-left:0 !important;
+        width:100%;
+    }
+
+    .contact-item{
+        font-size:.9rem;
+    }
+}
+
+/* ====================================
+   SMALL MOBILE
+==================================== */
+
+@media(max-width:480px){
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .hero-role{
+        font-size:1rem;
+    }
+
+    .hero-description{
+        font-size:.9rem;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .contact-item span{
+        font-size:.85rem;
+    }
+
+    .hero-image-card{
+        max-width:320px;
+    }
 }
